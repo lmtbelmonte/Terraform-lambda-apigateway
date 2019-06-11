@@ -1,4 +1,4 @@
-# Example: request for GET /hello
+# Ejemplo: peticion GET /hello
 resource "aws_api_gateway_method" "request_method" {
   rest_api_id   = "${var.rest_api_id}"
   resource_id   = "${var.resource_id}"
@@ -6,7 +6,7 @@ resource "aws_api_gateway_method" "request_method" {
   authorization = "NONE"
 }
 
-# Example: GET /hello => POST lambda
+# Ejemplo: GET /hello => POST lambda
 resource "aws_api_gateway_integration" "request_method_integration" {
   rest_api_id = "${var.rest_api_id}"
   resource_id = "${var.resource_id}"
@@ -14,7 +14,7 @@ resource "aws_api_gateway_integration" "request_method_integration" {
   type        = "AWS"
   uri         = "arn:aws:apigateway:${var.region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${var.region}:${var.account_id}:function:${var.lambda}/invocations"
 
-  # AWS lambdas can only be invoked with the POST method
+  # AWS lambdas solo pueden ser invocadas con POST method
   integration_http_method = "POST"
 }
 
@@ -30,7 +30,7 @@ resource "aws_api_gateway_method_response" "response_method" {
   }
 }
 
-# Response for: GET /hello
+# Respuesta de : GET /hello
 resource "aws_api_gateway_integration_response" "response_method_integration" {
   rest_api_id = "${var.rest_api_id}"
   resource_id = "${var.resource_id}"
