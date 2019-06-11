@@ -3,11 +3,11 @@ Hello (AWS) Lambda with Terraform
 
 [![Build Status](https://travis-ci.org/BWITS/Terraform-lambda-apigateway.svg?branch=master)](https://travis-ci.org/BWITS/Terraform-lambda-apigateway)
 
-This project is an example of a Python (AWS)
-[Lambda](https://aws.amazon.com/lambda/) exposed with [API
-Gateway](https://aws.amazon.com/api-gateway/), configured with
-[Terraform](https://www.terraform.io/). This demo project is related to the
-following blog post: [A Tour of AWS
+Este proyecto es un ejemplo de una Python (AWS)
+[Lambda](https://aws.amazon.com/lambda/) expuesta con el  [API
+Gateway](https://aws.amazon.com/api-gateway/) y  configurada con
+[Terraform](https://www.terraform.io/). Este Proyecto demo hace referencia al
+blog post: [A Tour of AWS
 Lambda](https://tailordev.fr/blog/2016/07/08/a-tour-of-aws-lambda/).
 
 
